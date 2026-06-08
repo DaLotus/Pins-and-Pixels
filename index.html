@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pins and Pixels</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Courier New', monospace; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .container { text-align: center; background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); max-width: 600px; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); }
+        h1 { color: #fff; font-size: 2.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); letter-spacing: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .arcade-container { margin: 40px auto; display: flex; justify-content: center; align-items: center; animation: glow 2s ease-in-out infinite; }
+        @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 200, 100, 0.3)); } 50% { filter: drop-shadow(0 0 20px rgba(255, 200, 100, 0.6)); } }
+        svg { width: 280px; height: 320px; filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)); }
+        p { color: #fff; font-size: 1.1em; line-height: 1.6; margin-top: 20px; }
+        .footer { margin-top: 30px; color: rgba(255, 255, 255, 0.9); font-size: 1em; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 PINS & PIXELS 🎮</h1>
+        <div class="arcade-container">
+            <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0f0f0f;stop-opacity:1" />
+                    </linearGradient>
+                    <pattern id="scanlines" x="0" y="0" width="116" height="3" patternUnits="userSpaceOnUse">
+                        <line x1="0" y1="0" x2="116" y2="0" stroke="rgba(0,0,0,0.3)" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect x="15" y="70" width="170" height="180" fill="url(#metalGradient)" stroke="#1a1a1a" stroke-width="2" rx="8"/>
+                <rect x="30" y="10" width="140" height="110" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2" rx="8"/>
+                <rect x="35" y="15" width="130" height="100" fill="#0f0f0f" stroke="#333" stroke-width="1" rx="6"/>
+                <rect x="42" y="22" width="116" height="86" fill="#1f5f2f" stroke="#2bcf5e" stroke-width="2" rx="4"/>
+                <rect x="42" y="22" width="116" height="86" fill="url(#scanlines)" opacity="0.6"/>
+                <text x="100" y="65" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2bcf5e" text-anchor="middle">INSERT</text>
+                <text x="100" y="82" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2bcf5e" text-anchor="middle">COIN</text>
+                <rect x="30" y="0" width="140" height="10" fill="#ff6b35" stroke="#1a1a1a" stroke-width="1"/>
+                <text x="100" y="8" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">PINS &amp; PIXELS ARCADE</text>
+                <rect x="25" y="125" width="150" height="70" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2" rx="6"/>
+                <rect x="30" y="130" width="140" height="60" fill="#2a2a2a" stroke="#444" stroke-width="1" rx="4"/>
+                <circle cx="50" cy="155" r="10" fill="#333" stroke="#555" stroke-width="1"/>
+                <rect x="48" y="140" width="4" height="15" fill="#666" rx="2"/>
+                <rect x="40" y="153" width="20" height="4" fill="#666" rx="2"/>
+                <circle cx="100" cy="145" r="6" fill="#ff4444" stroke="#cc0000" stroke-width="1"/>
+                <circle cx="120" cy="145" r="6" fill="#ffff00" stroke="#cccc00" stroke-width="1"/>
+                <circle cx="140" cy="145" r="6" fill="#00ff00" stroke="#00cc00" stroke-width="1"/>
+                <circle cx="100" cy="165" r="6" fill="#0088ff" stroke="#0066cc" stroke-width="1"/>
+                <circle cx="120" cy="165" r="6" fill="#ff00ff" stroke="#cc00cc" stroke-width="1"/>
+                <circle cx="140" cy="165" r="6" fill="#00ffff" stroke="#00cccc" stroke-width="1"/>
+                <rect x="30" y="195" width="12" height="35" fill="#1a1a1a" rx="2"/>
+                <rect x="158" y="195" width="12" height="35" fill="#1a1a1a" rx="2"/>
+                <rect x="85" y="205" width="30" height="8" fill="#444" stroke="#222" stroke-width="1" rx="2"/>
+                <text x="100" y="210" font-family="Arial, sans-serif" font-size="5" fill="#888" text-anchor="middle">COIN</text>
+                <rect x="25" y="230" width="150" height="30" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2" rx="6"/>
+                <text x="100" y="250" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ff6b35" text-anchor="middle">HIGH SCORE: 999999</text>
+            </svg>
+        </div>
+        <p>Welcome to the Pixels and Pins arcade! Ready to play?</p>
+        <div class="footer">
+            <p>🕹️ CLASSIC GAMING • PIXEL PERFECTION • RETRO VIBES 🕹️</p>
+            <p>Email: hello@respawnbrands.com</p>
+            
+        </div>
+    </div>
+</body>
+</html>
