@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pins and Pixels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pins and Pixels home">
+        <span class="brand-mark">P&amp;P</span>
+        <span>Pins and Pixels</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#games">Games</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="header-action" href="#party">Plan a Party</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="cabinet cabinet-one">
+            <div class="cabinet-top"></div>
+            <div class="cabinet-screen">
+              <div class="pixel-heart"></div>
+              <span>PLAY</span>
+            </div>
+            <div class="cabinet-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="cabinet cabinet-two">
+            <div class="cabinet-top"></div>
+            <div class="cabinet-screen screen-alt">
+              <div class="pixel-star"></div>
+              <span>JOIN</span>
+            </div>
+            <div class="cabinet-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="token token-one"></div>
+          <div class="token token-two"></div>
+          <div class="neon-line"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Open late, all ages before 9</p>
+          <h1 id="hero-title">A neighborhood arcade with a warm glow.</h1>
+          <p class="hero-copy">
+            Classic cabinets, cozy booths, friendly tournaments, and the kind
+            of welcome that makes one more round feel inevitable.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#visit">See Hours</a>
+            <a class="button secondary" href="#games">Browse Games</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Arcade highlights">
+        <div>
+          <span>Tonight</span>
+          <strong>Pinball league at 7 PM</strong>
+        </div>
+        <div>
+          <span>Tokens</span>
+          <strong>20 for $10, bonus on Fridays</strong>
+        </div>
+        <div>
+          <span>Kitchen</span>
+          <strong>Pizza, floats, and soft pretzels</strong>
+        </div>
+      </section>
+
+      <section class="section games-section" id="games" aria-labelledby="games-title">
+        <div class="section-heading">
+          <p class="eyebrow">Cabinets, pinball, rhythm, racing</p>
+          <h2 id="games-title">Games for every kind of player</h2>
+        </div>
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-art maze"></div>
+            <h3>Retro Row</h3>
+            <p>Pixel classics, high-score runs, and plenty of friendly rematches.</p>
+          </article>
+          <article class="game-card">
+            <div class="game-art pinball"></div>
+            <h3>Pinball Parlor</h3>
+            <p>Bright tables, fresh rubbers, polished glass, and weekly league play.</p>
+          </article>
+          <article class="game-card">
+            <div class="game-art racer"></div>
+            <h3>Racing Alley</h3>
+            <p>Side-by-side seats for kids, dates, rivals, and birthday champions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section events-section" id="events" aria-labelledby="events-title">
+        <div class="section-heading">
+          <p class="eyebrow">Come as you are</p>
+          <h2 id="events-title">Low-pressure nights with real community</h2>
+        </div>
+        <div class="event-list">
+          <article>
+            <time datetime="2026-06-18">Thu</time>
+            <div>
+              <h3>Beginner Fighting Game Night</h3>
+              <p>No brackets, no pressure, just coaching and casual matches.</p>
+            </div>
+          </article>
+          <article>
+            <time datetime="2026-06-19">Fri</time>
+            <div>
+              <h3>Family Free-Play Hour</h3>
+              <p>Pay once at the door and let the kids explore the floor.</p>
+            </div>
+          </article>
+          <article>
+            <time datetime="2026-06-21">Sun</time>
+            <div>
+              <h3>Sunday High-Score Board</h3>
+              <p>Fresh leaderboard, house prizes, and a photo on the wall.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section party-section" id="party" aria-labelledby="party-title">
+        <div>
+          <p class="eyebrow">Birthdays, team nights, reunions</p>
+          <h2 id="party-title">Reserve a booth and make it yours.</h2>
+          <p>
+            We set aside tokens, tables, food, and a little scoreboard ceremony
+            so your group can relax into the fun.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:hello@pinsandpixels.example">Ask About Dates</a>
+      </section>
+
+      <section class="section visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="visit-copy">
+          <p class="eyebrow">Find us downtown</p>
+          <h2 id="visit-title">Warm lights on Maple Street.</h2>
+          <p>
+            placeholders<br />
+            Tuesday-Sunday, 12 PM-11 PM<br />
+            Closed Mondays for repairs and cabinet love.
+          </p>
+        </div>
+        <div class="visit-panel" aria-label="Today at the arcade">
+          <span class="status-dot"></span>
+          <strong>Open today until 11 PM</strong>
+          <p>Quietest hours are usually 1 PM-4 PM. Best glow is after sunset.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Pins and Pixels</span>
+      <span>Good games. Good people. Good night.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
